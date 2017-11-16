@@ -1,0 +1,10 @@
+{% extends './layout.html' %}
+{% block title %}首页-app{% endblock %}
+{% block content %}
+<div id="app">{{ markup|safe }}</div>
+{% endblock %}
+{% block js %}
+<script type="application/json" id="initial">{{ initialState|json|safe }}</script>
+<script src="client/vendor.js"></script>
+<script src="client/index/dist/index.js"></script>
+{% endblock %}

@@ -1,0 +1,22 @@
+@import "../common/common.css";
+
+px2rem($px){
+    // designed in iphone6 mode
+    return $px / 37.5 * 1rem;
+}
+
+.refresh-btn{
+    position: absolute;
+    right: px2rem(12);
+    top: px2rem(4);
+    width: px2rem(32);
+    height:px2rem(32);
+}
+
+.container {
+	background: red;
+
+	&>div {
+		color: green;
+	}
+}

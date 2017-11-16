@@ -1,0 +1,9 @@
+{% extends './layout.html' %}
+{% block title %}出错啦！{% endblock %}
+{% block content %}
+<div id="app">{{ markup|safe }}</div>
+{% endblock %}
+{% block js %}
+<script type="application/json" id="initial">{{ initialState|json|safe }}</script>
+{% endblock %}
+
