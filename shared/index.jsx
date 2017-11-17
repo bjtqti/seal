@@ -18,10 +18,10 @@ class Index extends React.Component {
     	})
     }
     componentDidMount(){
-    	this.timerID=setInterval(()=>{
-    		this.updateIndex();
-    		//console.log(this.timerID)
-    	},3000)
+    	// this.timerID=setInterval(()=>{
+    	// 	this.updateIndex();
+    	// 	//console.log(this.timerID)
+    	// },3000)
     }
     componentWillUnmount() {
 	    clearInterval(this.timerID);
@@ -33,7 +33,7 @@ class Index extends React.Component {
         	<div onClick={this.updateIndex}>
         		<div>Hello world !{this.state.index}</div>
         		<ul>
-        			{list.map((item,i)=><li key={i}>{item}</li>)}
+        			{list.map((item,i)=><li key={i}>{item.title}</li>)}
         		</ul>
         	</div>
         )

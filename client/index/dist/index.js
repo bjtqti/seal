@@ -186,12 +186,10 @@ var Index = function (_React$Component) {
        }, {
               key: "componentDidMount",
               value: function componentDidMount() {
-                     var _this2 = this;
-
-                     this.timerID = setInterval(function () {
-                            _this2.updateIndex();
-                            //console.log(this.timerID)
-                     }, 3000);
+                     // this.timerID=setInterval(()=>{
+                     // 	this.updateIndex();
+                     // 	//console.log(this.timerID)
+                     // },3000)
               }
        }, {
               key: "componentWillUnmount",
@@ -220,7 +218,7 @@ var Index = function (_React$Component) {
                                           return _react2.default.createElement(
                                                  "li",
                                                  { key: i },
-                                                 item
+                                                 item.title
                                           );
                                    })
                             )
